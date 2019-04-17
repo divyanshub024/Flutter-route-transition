@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class SlideRightRoute extends PageRouteBuilder {
@@ -101,36 +99,6 @@ class SlideBottomRoute extends PageRouteBuilder {
                   begin: const Offset(0, -1),
                   end: Offset.zero,
                 ).animate(animation),
-                child: child,
-              ),
-        );
-}
-
-class SlideTranslate extends PageRouteBuilder {
-  final Widget page;
-  SlideTranslate({this.page})
-      : super(
-          pageBuilder: (
-            BuildContext context,
-            Animation<double> animation,
-            Animation<double> secondaryAnimation,
-          ) =>
-              page,
-          transitionDuration: Duration(seconds: 1),
-          transitionsBuilder: (
-            BuildContext context,
-            Animation<double> animation,
-            Animation<double> secondaryAnimation,
-            Widget child,
-          ) =>
-              AnimatedBuilder(
-                animation: animation,
-                builder: (context, widget) {
-                  return Transform.translate(
-                    offset: Offset(animation.value * 2.0 * pi, 0),
-                    child: child,
-                  );
-                },
                 child: child,
               ),
         );

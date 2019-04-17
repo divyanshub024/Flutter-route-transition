@@ -3,12 +3,7 @@ import 'package:route_transition/main.dart';
 import 'package:route_transition/transitions/enter_exit_route.dart';
 import 'package:route_transition/transitions/scale_rotate_route.dart';
 
-class RandomScreen extends StatefulWidget {
-  @override
-  _RandomScreenState createState() => _RandomScreenState();
-}
-
-class _RandomScreenState extends State<RandomScreen> {
+class RandomScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +17,7 @@ class _RandomScreenState extends State<RandomScreen> {
             RaisedButton(
               child: Text('EnterExitSlideTransition'),
               onPressed: () => Navigator.push(context,
-                  EnterExitRoute(exitPage: this.widget, enterPage: Screen2())),
+                  EnterExitRoute(exitPage: this, enterPage: Screen2())),
             ),
             RaisedButton(
               child: Text('ScaleRotateTransition'),
