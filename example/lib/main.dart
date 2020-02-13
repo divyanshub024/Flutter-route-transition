@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:route_transition/screens/SlideScreen.dart';
-import 'package:route_transition/screens/fade_screen.dart';
-import 'package:route_transition/screens/random_screen.dart';
-import 'package:route_transition/screens/rotation_screen.dart';
-import 'package:route_transition/screens/scale_screen.dart';
-import 'package:route_transition/screens/size_screen.dart';
+
+import 'screens/fade_screen.dart';
+import 'screens/random_screen.dart';
+import 'screens/rotation_screen.dart';
+import 'screens/scale_screen.dart';
+import 'screens/size_screen.dart';
+import 'screens/slide_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -51,12 +51,12 @@ class Screen1 extends StatelessWidget {
     List<RaisedButton> buttons = List<RaisedButton>();
     screens.forEach(
       (k, v) => buttons.add(
-            RaisedButton(
-              child: Text(k),
-              onPressed: () => Navigator.push(
-                  context, CupertinoPageRoute(builder: (context) => v)),
-            ),
-          ),
+        RaisedButton(
+          child: Text(k),
+          onPressed: () => Navigator.push(
+              context, MaterialPageRoute(builder: (context) => v)),
+        ),
+      ),
     );
     return buttons;
   }

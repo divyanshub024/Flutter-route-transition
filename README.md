@@ -1,5 +1,14 @@
-# Flutter page route transition
+# flutter_package
 
-A Flutter application showing different ways of animating page route transition. For more info check out my [blog](https://medium.com/flutter-community/everything-you-need-to-know-about-flutter-page-route-transition-9ef5c1b32823)
+A new Flutter package.
 
-<img src ="https://github.com/divyanshub024/Flutter-page-route-transition/blob/master/art/route_transition.gif" />
+## Getting Started
+
+This project is a starting point for a Dart
+[package](https://flutter.dev/developing-packages/),
+a library module containing code that can be shared easily across
+multiple Flutter or Dart projects.
+
+For help getting started with Flutter, view our 
+[online documentation](https://flutter.dev/docs), which offers tutorials, 
+samples, guidance on mobile development, and a full API reference.

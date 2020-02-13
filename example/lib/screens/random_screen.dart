@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:route_transition/main.dart';
-import 'package:route_transition/transitions/enter_exit_route.dart';
-import 'package:route_transition/transitions/scale_rotate_route.dart';
+import 'package:flutter_route_transition/flutter_route_transition.dart';
+
+import '../main.dart';
 
 class RandomScreen extends StatelessWidget {
   @override

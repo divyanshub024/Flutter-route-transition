@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:route_transition/main.dart';
-import 'package:route_transition/transitions/size_route.dart';
+import 'package:flutter_route_transition/flutter_route_transition.dart';
+
+import '../main.dart';
 
 class SizeScreen extends StatelessWidget {
   @override
